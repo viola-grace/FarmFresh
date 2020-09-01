@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Lemonada:400,800');
+body{
+	font-family: 'Lemonada', sans-serif;
+}
+#header {
+	margin-top :0px;
+	background-color: #00008b;
+	color: white;
+	height:100%;
+	width:100%;
+	padding-top:20px;
+	padding-left:20px;
+}
+
+.menu {
+	float: right;
+	text-decoration: none;
+	color: white;
+	margin-right: 50px;
+	font-size: 20px;
+}
+
+.link {
+	text-decoration: none;
+	color: white;
+	margin-right: 50px;
+	font-size: 20px;
+}
+#edit{
+color:green;
+}
+td {
+	padding-left: 50px;
+	color:black;
+}
+.mapsection{
+	position:absolute;
+	right:20px;
+}
+
+.list-content{
+	float:top;
+	display:inline-block;
+}
+.list-content2{
+	float:down;               
+     position: absolute;
+      padding-top:40%;     
+      padding-left:40%; 
+     }
+.tabs {
+  width: 750px;
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 25px 0 0 10px;
+  text-align: left;
+}
+.tabs li {
+  float: left;
+  display: block;
+}
+.tabs input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+.tabs label {
+  display:inherit;
+  width:150%;
+  margin:0 auto;
+  padding: 14px 21px;
+  border-radius: 0px 0px 0 0;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: #2A88AD;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.tabs label:hover {
+  background: #808080;
+}
+.tabs .tab-content {
+    min-height: 100px;
+     border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+ 			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
+            -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
+            -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 180%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 50px;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  background: #F4E6FF;
+}
+.tabs [id^="tab"]:checked + label {
+  top: 0;
+  padding-top: 17px;
+  background: #F4E6FF;
+}
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block;
+}
+
+p.link {
+  clear: both;
+  margin: 380px 0 0 15px;
+}
+p.link a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #fff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+p.link a:hover {
+  background-color: #2A88AD;
+}
+.page-design{
+    width:780px;
+    height:100px;
+            margin:auto;
+            background: #FFF;
+            border-radius: 10px;
+            -webkit-border-radius:10px;
+            -moz-border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+            -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+            -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+@media screen and (max-width: 800px){
+	#header {
+	margin-top :0px;
+	background-color: #00008b;
+	color: white;
+	height:100%;
+	width:280%;
+	padding-top:20px;
+	padding-left:20px;
+}
+	
+	.tabs {
+  width: 550px;
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 15px 0 0 10px;
+  text-align: left;
+}
+.tabs .tab-content {
+    min-height: 20px;
+     border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+ 			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
+            -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
+            -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 180%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 10px;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  background: #F4E6FF;
+}
+.mapsection{
+	display:none;
+}
+
+	}

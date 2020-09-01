@@ -1,0 +1,325 @@
+@import
+	url('https://fonts.googleapis.com/css?family=Rubik%20Mono%20One');
+@import url('https://fonts.googleapis.com/css?family=Lemonada:400,800');
+body{
+	font-family: 'Lemonada', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("wall.jpg");
+	display: flex;
+	text-align: center;
+}
+.details{
+	color:white;
+}
+.section {
+	width: 75%;
+	padding: 12%;
+	padding-top: 2%;
+	margin: 0 auto;
+}
+
+div.verticalA {
+	height: 50%;
+	writing-mode: vertical-rl;
+}
+
+.indicator {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	transform: rotate(45deg);
+}
+
+span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 3px solid #fff;
+	border-right: 3px solid #fff;
+	animation: animate 1s linear infinite;
+}
+
+body .indicator span:nth-child(1) {
+	top: -30px;
+	left: -30px;
+	animation-delay: 0s;
+}
+
+body .indicator span:nth-child(2) {
+	top: -15px;
+	left: -15px;
+	animation-delay: 0.2s;
+}
+
+body .indicator span:nth-child(3) {
+	top: 0;
+	left: 0;
+	animation-delay: 0.4s;
+}
+
+body .indicator span:nth-child(4) {
+	top: 15px;
+	left: 15px;
+	animation-delay: 0.6s;
+}
+
+body .indicator span:nth-child(5) {
+	top: 30px;
+	left: 30px;
+	animation-delay: 0.8s;
+}
+
+@keyframes animate { 
+	0% {
+	border-color: #fff;
+	transform: translate(0, 0);
+}
+20%{
+border-color:#fff;
+transform:translate(15 px,15 px);
+}
+20.1%{
+	border-color:#ffd64a;
+}
+100%{
+border-color:#ffd64a;
+}
+}
+.sub {
+	margin: 0 auto;
+	width: 45vh;
+	height: 60%;
+	padding-top: 30%;
+	margin-top:4%;
+	text-align: center;
+	padding-bottom: 5%;
+	font-weight: bold;
+	border-radius: 10px;
+	box-shadow: 0 28px 40px rgba(0, 0, 0, 0.25), 0 20px 20px
+		rgba(0, 0, 0, 0.22);
+	position: relative;
+	overflow: hidden;
+	padding-top: 2%;
+}
+
+.title {
+	font-family: Rubik Mono One;
+	font-size: 150%;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+.left {
+	float: left;
+	padding: 10%;
+	background-color: #FBF2FC;
+	width: 60%;
+	box-shadow: 30px;
+	border-radius: 20px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px
+		rgba(0, 0, 0, 0.22);
+	position: relative;
+	overflow: hidden;
+}
+
+.right {
+	float: right;
+	padding: 10%;
+	background-color: #FBF2FC;
+	width: 60%;
+	border-radius: 20px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px
+		rgba(0, 0, 0, 0.22);
+	position: relative;
+	overflow: hidden;
+}
+
+.header {
+	padding: 30px;
+	height: 50px;
+	color: white;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+}
+
+.mySlides {
+	display: none;
+}
+
+img {
+	width: 200px;
+	box-shadow: 0 28px 40px rgba(0, 0, 0, 0.25), 0 20px 20px
+		rgba(0, 0, 0, 0.22);
+}
+
+/*Mobile compatible code goes here*/
+@media screen and (max-width: 600px) {
+	.section {
+		width: 80%;
+		padding-top: 20%;
+		margin: 0 auto;
+	}
+	p{
+	display:none;
+	}
+	div.verticalA {
+		display:none:
+	}
+	.indicator {
+		display:none:
+	}
+	span {
+	display:none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 10%;
+		height: 10%;
+		box-sizing: border-box;
+		border: none;
+		border-bottom: 3px solid #fff;
+		border-right: 3px solid #fff;
+		animation: animate 1s linear infinite;
+	}
+	body .indicator span:nth-child(1) {
+		top: -10px;
+		left: -10px;
+		animation-delay: 0s;
+	}
+	body .indicator span:nth-child(2) {
+		top: -5px;
+		left: -5px;
+		animation-delay: 0.2s;
+	}
+	body .indicator span:nth-child(3) {
+		top: 0;
+		left: 0;
+		animation-delay: 0.4s;
+	}
+	body .indicator span:nth-child(4) {
+		top: 5px;
+		left: 5px;
+		animation-delay: 0.6s;
+	}
+	body .indicator span:nth-child(5) {
+		top: 10px;
+		left: 10px;
+		animation-delay: 0.8s;
+	}
+	@
+	keyframes animate { 0% {
+		border-color: #fff;
+		transform: translate(0, 0);
+	}
+	20%
+	{
+	border-color:#fff;
+	transform:translate(15px,15px);}
+	20.1%,100%{border-color:#ffd64a;
+	}
+	.sub {
+	margin: 0 auto;
+	width:10vh;
+	font-size:50%;
+	height: 30%;
+	padding-top: 30%;
+	margin-top:4%;
+	text-align: center;
+	padding-bottom: 5%;
+	font-weight: bold;
+	border-radius: 10px;
+	box-shadow: 0 28px 40px rgba(0, 0, 0, 0.25), 0 20px 20px
+		rgba(0, 0, 0, 0.22);
+	position: relative;
+	overflow: hidden;
+	padding-top: 2%;
+}
+h1{
+	font-size:1em;
+}
+h4{
+	font-size:1em;
+	display: block;
+	margin-top:0%;
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.title {
+	font-family: Rubik Mono One;
+	font-size: 10%;
+}
+
+a {
+	color: #333;
+	font-size: 10px;
+	text-decoration: none;
+	margin: 10px 0;
+}
+
+.left {
+	float: left;
+	padding: 2%;
+	background-color: #FBF2FC;
+	width: 10%;
+	box-shadow: 30px;
+	border-radius: 20px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px
+		rgba(0, 0, 0, 0.22);
+	position: relative;
+	overflow: hidden;
+}
+.details{
+	color:white;
+}
+.right {
+	float: right;
+	padding: 2%;
+	font-size:20%;
+	background-color: #FBF2FC;
+	width: 10%;
+	border-radius: 20px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px
+		rgba(0, 0, 0, 0.22);
+	position: relative;
+	overflow: hidden;
+}
+
+.header {
+	padding: 10px;
+	height: 30px;
+	color: white;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+}
+
+.mySlides {
+	display: none;
+}
+img {
+	box-shadow: 0 28px 40px rgba(0, 0, 0, 0.25), 0 20px 20px
+		rgba(0, 0, 0, 0.22);
+}
+}
